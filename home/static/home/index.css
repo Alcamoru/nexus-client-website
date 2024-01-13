@@ -1,0 +1,24 @@
+@font-face {
+    font-family: beaufort;
+    src: url("/static/fonts/beaufort/BeaufortforLOL-Medium.ttf");
+}
+
+body {
+    background: linear-gradient(#091428, #0A1428);
+}
+
+h1  {
+    font-family: beaufort, serif;
+    color: #A09B8C;
+    font-size: 60px;
+    text-align: center;
+}
+
+h3 {
+    font-weight: lighter;
+
+    font-family: beaufort, serif;
+    color: #A09B8C;
+    font-size: 40px;
+    text-align: center;
+}
