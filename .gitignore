@@ -254,4 +254,4 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-!/docker-compose-deploy.yml
+docker-compose-deploy.yml
