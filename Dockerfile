@@ -10,11 +10,12 @@ WORKDIR /app
 
 EXPOSE 8000
 
-RUN pip -m venv /py && \
-    /py/bin/pip/install --upgrade pip && \
-    /py/bin/pip install -r requirements/txt && \
+RUN python -m venv /py && \
+    /py/bin/pip install --upgrade pip && \
+    /py/bin/pip install -r /requirements.txt && \
     adduser --disabled-password --no-create-home app
 
-COPY . .
+ENV PATH="/py/bin:$PATH"
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+USER app
+
