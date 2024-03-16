@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'nexus.urls'
+ROOT_URLCONF = 'app.nexus.urls'
 
 TEMPLATES = [
     {

@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Nexus Client</title>
+    <link rel="stylesheet" href="{% static 'home/index.css' %}">
+</head>
+<body>
+<div class="presentation">
+    <h1>Nexus Client</h1>
+    <h3>Statistiques professionnelles pour League of Legends</h3>
+</div>
+<hr>
+<div class="download">
+    <button class="dl"><a download="">Télécharger</a></button>
+</div>
+<hr>
+<div class="images-content">
+    <div class="images-grid">
+        <img class="xayah" src="{% static 'img/game_splashart.jpg' %}" alt="">
+        <img class="game" src="{% static 'img/xayah_splashart.jpg' %}" alt="">
+        <img class="app" src="{% static 'img/app_example.png' %}" alt="">
+        <img class="app2" src="{% static 'img/app_example_2.png' %}" alt="">
+    </div>
+</div>
+<hr>
+<div class="who-are-we">
+    <h3>Qui sommes nous ?</h3>
+    <p>Passionnés par l'univers League of legends nous somme des lycéens un peu geek.</p>
+    <p>Nous avons développé une version native d'application afin d'accéder à des données de jeu
+    sur League of legends</p>
+</div>
+<hr>
+<div class="contribute">
+    <h3>Contribuer</h3>
+    <p>Ce projet est open-source et nous le réalisons en pur bénévolat</p>
+    <p>Ainsi, toute contribution est la bienvenue !</p>
+    <div class="github-wrapper">
+        <a class="github" href="https://github.com/Alcamoru/nexus-client">
+            <img class="github-logo" src="{% static 'logos/github.png' %}" alt="">
+            <p>Nous rejoindre</p>
+        </a>
+    </div>
+</div>
+</body>
+</html>
