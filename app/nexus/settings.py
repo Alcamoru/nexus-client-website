@@ -24,7 +24,6 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool(int(os.environ.get('DEBUG', 0)))
-DEBUG = True
 
 ALLOWED_HOSTS = []
 ALLOWED_HOSTS.extend(
@@ -81,14 +80,10 @@ WSGI_APPLICATION = 'nexus.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'HOST': "db",
-        'NAME': "devdb",
-        'USER': "devuser",
-        'PASSWORD': "changeme"
-        # 'HOST': os.environ.get('DB_HOST'),
-        # 'NAME': os.environ.get('DB_NAME'),
-        # 'USER': os.environ.get('DB_USER'),
-        # 'PASSWORD': os.environ.get('DB_PASS')
+        'HOST': os.environ.get('DB_HOST'),
+        'NAME': os.environ.get('DB_NAME'),
+        'USER': os.environ.get('DB_USER'),
+        'PASSWORD': os.environ.get('DB_PASS')
     }
 }
 
